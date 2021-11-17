@@ -8,6 +8,7 @@ import javax.persistence.Id;
 import javax.validation.constraints.NotEmpty;
 
 import io.getarrays.server.enumeration.Status;
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -19,6 +20,7 @@ import lombok.NoArgsConstructor;
 @Entity
 @Data
 @NoArgsConstructor
+@AllArgsConstructor
 public class Server {
 	@Id @GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
